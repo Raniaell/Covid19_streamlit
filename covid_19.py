@@ -3,7 +3,7 @@ from joblib import load
 st.title("Welcome to the Covid 19 data of the United Kingdom UK")
 st.header("Let's start")
 lg = load('covid19.joblib')
-x = int(st.text_input("The number of cases confirmed is:"))
+x = st.number_input("The number of cases confirmed is:")
 st.write("The chosen number is :", x)
 lg.coef_=load("y.joblib")
 lg.intercept_=load("y2.joblib")
