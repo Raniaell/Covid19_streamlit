@@ -1,6 +1,9 @@
 import streamlit as st
 from joblib import load
+st.set_page_config( page_title="Pandemic Era in UK",
+                   page_icon="🚨")
 st.title("Welcome to the Covid 19 data of the United Kingdom UK")
+st.sidebar.success("Checkpoint")
 st.header("Let's start")
 lg = load('covid19.joblib')
 x = st.number_input("The number of cases confirmed is:")
