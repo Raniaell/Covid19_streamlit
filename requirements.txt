@@ -3,5 +3,6 @@ pandas
 streamlit
 joblib==1.2.0
 scikit-learn==1.2.2
-matplotlib.pyplot
-plotly.express
+matplotlib==3.6.3
+plotly==5.14.1
+requests==2.28.2
